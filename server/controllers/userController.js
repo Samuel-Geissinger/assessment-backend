@@ -1,5 +1,5 @@
 const db = require('../databases/users.json')
-const usersURL = 'C:\\Users\\Sam\\Documents\\devMountain\\assessment\\assessment-backend\\server\\databases\\users.json'
+const usersURL = '' // You have to put the path to the users.json file assessment-backend\\server\\databases\\users.json';
 const fs = require('fs');
 const bcrypt = require('bcryptjs')
 let globalID = db.length + 1;
