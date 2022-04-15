@@ -45,11 +45,7 @@ const deleteUserAction = () => {
 
 const getUserID = () => {
   const dialog = document.getElementById('dialog');
-  if (typeof dialog.showModal !== 'function') {
-    dialog.hidden = true;  
-  } else {
-    dialog.showModal();
-  } 
+    dialog.show();  
 }
 
 const editUserEvent = eve => {
@@ -64,6 +60,9 @@ const editUserEvent = eve => {
   }
 
   editUser(id, updateUser);
+
+  const dialog = document.getElementById('dialog');
+  dialog.close();
 }
 
 
