@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <button id="complimentButton">Get a compliment</button>
+
+    <button id="fortunesButton">Get a fortune</button>
+
+    <div>
+      <input type="text" id='username' placeholder='Enter username'/>
+      <input type="password" id='password' placeholder='Enter password'/>
+      <button id="addUser">Add user to Database</button>
+    </div>
+
+    <div>
+      <input type="text" id="deleteID" placeholder="Enter a user ID to delete" />
+      <button id="deleteUser">Delete</button>
+    </div>
+    
+    <div>
+      <button id="editUser">Edit User</button>
+    </div>
+
+    <div>
+      <br/>
+      <dialog id="dialog">
+        <h2>User</h2>
+        <input type="text" id="editID" placeholder="Enter a user ID to edit" />
+        <input type="text" id="usernameDialog" placeholder="Enter username" />
+        <input type="text" id="passwordDialog" placeholder="Enter password" />
+        <button id="editUserDialog">Edit User</button>
+      </dialog>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
